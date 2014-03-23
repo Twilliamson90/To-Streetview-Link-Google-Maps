@@ -10,12 +10,6 @@ Loads location data (geo coordinates) from js/data.js
 
 On document readyCall the myMap.init(mapId) function with the id of your map as the argument.
 
-'''javascript
-
-$(function() {
-
-	myMap.init('map-canvas');
-
-});
-
+'''
+myMap.init('map-canvas');
 '''
