@@ -12,9 +12,9 @@ On document ready, call the init() function with the id of your map as the argum
 
 ```javascript
 
-// include myMap variable (class if you will)
+// include myMap variable from js/main.js
 
-// document ready shortcut
+// document ready short cut
 $(function() {
 
   // initialize the map
