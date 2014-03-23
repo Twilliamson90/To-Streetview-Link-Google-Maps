@@ -2,99 +2,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Map With Link To StreetView | Travis Williamson</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
     <link href='css/main.css' rel='stylesheet' type='text/css'>
-    <link href='css/menu.css' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-	<style>
-		.iw .fa {
-			color: #bdc3c7;
-			font-size: 14px;
-			margin-right: 4px;
-			width: 16px;
-			text-align: center;
-		}
-		#map-canvas .title {
-			border-bottom: 1px solid #ccc;
-			display: inline-block;
-			font-size: 16px;
-			font-weight: 400;
-			margin: 0 0 2px 4px;
-			padding-bottom: 2px;
-			text-shadow: 1px 1px rgba(95, 95, 95, 0.2);
-		}
-		#map-canvas .desc {
-			font-size: 16px;
-			font-weight: 200;
-			display: inline-block;
-			margin: 1px 0;
-		}
-		#map-canvas a {
-			text-decoration: none;
-		}
-		#map-canvas a:hover {
-			text-decoration: underline;
-		}
-	</style>
   </head>
   
   <body>
-	<div id="st-container" class="st-container">
 	
-		<nav class="st-menu st-effect-2" id="menu-2">
-			<div class="filter-container-sm">
-				<div>
-					<div class="filter-options">
-						<h2>Filter</h2>
-						<div class="filter-set" style="margin-top:0;">
-							<button id="get-location" class="get-location button is-primary">Get location</button>
-						</div>
-					</div> <!-- .filter-options -->
-				</div> 
-			</div> <!-- .filter-container-sm -->
-		</nav>
-		
-		<div class="st-pusher">
-			<div class="outer-container">
-				<h1>JavaScript Marker Filtering</h1>
-				<div class="inner-container cf">
-					<div id="st-trigger-effects">
-						<button class="button is-default" data-effect="st-effect-2">Filter</button>
-					</div>
-					<div class="map-container">
-						<a href="#" id="close" onclick="myMap.closeSv();">Exit</a>
-						<div id="map-canvas"></div>
-					</div>
-					
-					<div class="filter-container-lg">
-						<div>
-							<h2>Filter</h2>
-							<div class="filter-options">
-								<div class="filter-set" style="margin-top:0;">
-									<button id="get-location" class="get-location button is-primary">Get location</button>
-								</div>
-							</div> <!-- .filter-options -->
-						</div> 
-					</div> <!-- .filter-container-lg -->
-					
-					<div id="status"></div>
-				</div> <!-- .inner-container -->
-			</div> <!-- .outer-container -->
-			
-		</div> <!-- .st-pusher -->
-	</div> <!-- #st-container -->
+	<div class="description">
+		<h1>JavaScript Link to StreetView</h1>
+		<p>View this project on <a href="https://github.com/Twilliamson90/To-Streetview-Link-Google-Maps" alt="Link to GitHub page">GitHub</a></p>
+		<ol>
+			<li>Select a marker</li>
+			<li>Click the 'Street View &gt;&gt;' link</li>
+		</ol>
+		<p>Determines Street View position (within 150 meters) and angles display towards marker coordinates.</p>
+	</div>
+
+	<div class="inner-container">
+		<div id="map-canvas"></div>
+	</div> <!-- .inner-container -->
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.3.min.js"><\/script>')</script>
+    
     <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
-	
-	<script src="js/classie.js"></script>
-	<script src="js/menu.js"></script>
 
-    <script src="js/event-data.js"></script>
-    <script src="js/script-events.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>

@@ -1,7 +1,19 @@
 # Google Maps Infowindow with Link to Streetview
 
-<a href="http://labs.traviswilliamson.me/Google-Maps-TT-Streetview/" target="_blank" title="Live Demo">Demo</a> functionalized version.
+Adds ability to go directly to the Street View of a set latitude and longitude using the Google Maps JavaScript API
 
-Adds ability to jump directly to the Street View of a set latitude and longitude using the Google Maps API.
+###<a href="http://labs.traviswilliamson.me/Google-Maps-TT-Streetview/" target="_blank" title="Live Demo">Demo</a>
 
-Currently working on an <a href="http://labs.traviswilliamson.me/Google-Maps-TT-Streetview/index_v2.html" target="_blank" title="Live Demo">object oriented (OO) version</a> as well, feel free to contribute, it's not quite ready for primetime.
+Loads location data (geo coordinates) from js/data.js
+
+## Usage
+
+On document readyCall the myMap.init(mapId) function with the id of your map as the argument.
+
+'''
+$(function() {
+
+	myMap.init('map-canvas');
+
+});
+'''
