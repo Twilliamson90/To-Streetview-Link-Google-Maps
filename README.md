@@ -8,8 +8,18 @@ Loads location data (geo coordinates) from js/data.js
 
 ## Usage
 
-On document readyCall the myMap.init(mapId) function with the id of your map as the argument.
+On document ready, call the init() function with the id of your map as the argument.
 
-'''
-myMap.init('map-canvas');
-'''
+```javascript
+
+// include myMap variable (class if you will)
+
+// document ready shortcut
+$(function() {
+
+  // initialize the map
+  // Argument (string): ID of the Google Map element
+  myMap.init('map-canvas');
+  
+});
+```
